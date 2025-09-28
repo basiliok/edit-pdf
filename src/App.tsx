@@ -1,5 +1,14 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/home/Home';
+
 function App() {
-    return <p>Click on the Vite and React logos to learn more</p>;
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
